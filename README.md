@@ -1,1 +1,1 @@
-# react-todo-list
+# react-tic-tac-toe
