@@ -9,10 +9,10 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
+        <a href="https://ko.vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
+        <a href="https://ko.react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
@@ -22,14 +22,11 @@ function App() {
           count is {count}
         </button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-        <p>
-          Github Actions + Github Pages CI/CD 연습
+          <code>src/App.tsx</code>를 편집하고 저장하여 HRM을 테스트해보세요
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        자세히 알아보려면 Vite 및 React 로고를 클릭하세요.
       </p>
     </>
   )
