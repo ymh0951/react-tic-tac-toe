@@ -29,6 +29,6 @@ jobs:
       - name: 배포
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          # GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
-          BRANCH: gh-pages
-          FORDER: docs
+          token: ${{ secrets.WORKFLOW_TOKEN }}
+          branch: gh-pages
+          folder: docs
