@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout 코드
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
@@ -19,14 +19,16 @@ jobs:
           node-version: '18'
 
       - name: Install 의존성
-        run: npm install
+        run: |
+          npm ci
+          npm run build
 
       - name: 빌드
         run: npm run build
 
       - name: 배포
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+          # GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
           BRANCH: gh-pages
           FORDER: build
