@@ -27,6 +27,6 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@4.1.2
       with:
-        token: ${{ secrets.ACCESS_TOKEN }} # 여기서 직접 발급한 Personal Access Token을 사용
-        branch: gh-pages
-        folder: build
+        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build
