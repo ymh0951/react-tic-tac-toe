@@ -31,4 +31,4 @@ jobs:
         with:
           # GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
           BRANCH: gh-pages
-          FORDER: build
+          FORDER: docs
